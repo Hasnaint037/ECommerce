@@ -1,0 +1,121 @@
+.banner {
+  background: linear-gradient(to right, #635dc0, #3027ae);
+  height: 100vmin;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.banner > h1 {
+  margin: 4vmax 5vmax 5vmax 5vmax;
+  font: 600 2.5vmax "Franklin Gothic Medium", "Arial Narrow";
+}
+.banner > p {
+  font: 300 2vmax "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+}
+.banner a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 2.5vmax;
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  position: absolute;
+  background-color: #ffffff;
+  top: 0%;
+  left: 0%;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+.home-heading {
+  text-align: center;
+  font-size: 1.9vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 25vmax;
+  padding: 1vmax;
+  font-family: cursive;
+  margin: 5vmax auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 2vmax auto;
+  justify-content: center;
+}
+.product-card {
+  width: 15vmax;
+  display: flex;
+  min-height: 30vh;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transform: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+.product-card > img {
+  width: 15vmax;
+}
+.product-card > div {
+  margin: 0.5vmax 0.5vmax 0vmax 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+.product-card > div > span {
+  margin: 0.8vmax 0.3vmax 0.5vmax 0.1vmax;
+  font: 0.9vmax "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: cursive;
+}
+.product-card > p {
+  font-size: 1.8vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  font-family: cursive;
+}
+.product-card > span {
+  margin: 0vmax 0.5vmax;
+  font-family: cursive;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3vmax;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 5px rgba(154, 15, 15, 0.5);
+  transform: translateY(-1vmax);
+}
+@media screen and (max-width: 600px) {
+  .product-card > p {
+    font-size: 1.7vmax;
+  }
+  .product-card > div {
+    margin: 0;
+    display: block;
+  }
+  .product-card > span {
+    font-size: 1.5vmax;
+  }
+  .product-card > div > span {
+    margin: -0.5vmax 0.5vmax 1.5vmax 0.5vmax;
+    font: 300 1.9vmax "Franklin Gothic Medium", "Arial Narrow", Arial,
+      sans-serif;
+  }
+}

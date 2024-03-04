@@ -1,0 +1,6 @@
+router.route(endpoint).get(controller),
+images to upload on cloudinary
+
+in schema 
+name:{type:String,required:[true,"please..."]};
+trim:true  ia ka matlab hai unnecessary white spaces

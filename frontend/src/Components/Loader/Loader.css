@@ -1,0 +1,29 @@
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loader > div {
+  width: 8vmax;
+  height: 8vmax;
+  border-bottom: 4px solid black;
+  border-top: 4px solid crimson;
+  border-left: 4px solid yellow;
+  border-right: 4px solid green;
+  border-radius: 50%;
+  animation-name: rotation;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

@@ -1,12 +1,14 @@
 name: PR Merged Message
 
 on:
-    push:
-        branches:
-            - dev
-            - main
+  push:
+    branches:
+      - dev
+      - main
+
 jobs:
-    say-hello:
-        runs-on: unbuntu-latest
-        steps:
-            run: echo "This is the pr m,erged success message"
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Success Message
+        run: echo "This is the PR merged success message 🚀"

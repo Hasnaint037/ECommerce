@@ -1,15 +1,14 @@
 name: PR Merged Message
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - dev
+      - main
 
 jobs:
   say-hello:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello world! Your PR is merged 🎉"
+      - name: Say Success Message
+        run: echo "This is the PR merged success message 🚀"

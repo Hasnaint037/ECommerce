@@ -1,16 +1,18 @@
 name: Single Workflow
 
 on:
-    workflow_dispatch
+  workflow_dispatch:
+
 env:
-    name: Hasnain
+  name: Hasnain
+
 jobs:
-    Variable_Decleration:
-        runs-on: ubuntu-latest
+  Variable_Declaration:
+    runs-on: ubuntu-latest
+    env:
+      age: 18
+    steps:
+      - name: Step One
+        run: echo "$name is $age years old and study in class $class."
         env:
-            age: 18
-        steps:
-            - name: Step One
-              run: echo $name is $age years old and study in class $class.
-              env:
-                class: 18
+          class: 18
